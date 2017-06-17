@@ -5,13 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using System.Management;
 using System.IO;
-using System.Printing;
-using System.Text;
-using System.Drawing.Printing;
-using System.Drawing;
-using Spire.Pdf;
 
 namespace InternetExplorerExtension
 {
@@ -37,9 +31,6 @@ namespace InternetExplorerExtension
                 // This will prevent this method being executed more than once.
                 if (pDisp != this.site)
                     return;
-
-
-
 
                 var document2 = browser.Document as IHTMLDocument2;
                 var document3 = browser.Document as IHTMLDocument3;
